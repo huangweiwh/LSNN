@@ -13,10 +13,16 @@ pip install -r requirements.txt
 ```
 ## Usage
 - train
-```python
+
+```sh
 python train.py --config ./configs/cifar10/LSML/resnet_ls_fix_attention.yaml
+python train.py --config ./configs/cifar10/LSFL/resnet_one_fusion_HL.yaml
 ```
 - test
-```python
+
+Before you try to test, you should finish training.
+
+Then you will get the checkpoint, add the checkpoint path to 'test' part of 'config.yaml'.
+```sh
 python evaluate.py --config ./experiments/cifar10/LSML/resnet_ls_fix_attention/exp00/config.yaml
 ```
