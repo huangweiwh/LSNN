@@ -15,7 +15,7 @@ pip install -r requirements.txt
 - train
 
 ```sh
-python train.py --config ./configs/cifar10/LSML/resnet_ls_fix_attention.yaml
+python train.py --config ./configs/cifar10/LSML/resnet_ls_fix_attention.yaml  &&
 python train.py --config ./configs/cifar10/LSFL/resnet_one_fusion_HL.yaml
 ```
 - test
